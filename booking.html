@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafarFix Travel | Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.jpg" alt="SafarFix Travel Logo" /></a>
+    </div>
+    <nav class="nav-menu" id="nav-menu">
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#destinations">Destinations</a></li>
+        <li><a href="index.html#hotels">Hotels</a></li>
+        <li><a href="index.html#activites">Activities</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero booking-hero">
+      <div class="hero-content">
+        <h1>Book Your Dream Trip</h1>
+        <p>Fill out the form below and our travel experts will contact you soon.</p>
+      </div>
+    </section>
+    <section class="contact">
+      <h3>Booking Form</h3>
+      <form id="bookingForm" action="https://formspree.io/f/xwkrqjzv" method="POST" class="form" autocomplete="on">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter Your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter Your Email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone Number" required />
+        </div>
+        <div class="form-group">
+          <label for="destination">Destination</label>
+          <input type="text" name="destination" id="destination" placeholder="Where do you want to go?" required />
+        </div>
+        <div class="form-group">
+          <label for="date">Travel Date</label>
+          <input type="date" name="date" id="date" required />
+        </div>
+        <div class="form-group">
+          <label for="details">Additional Details</label>
+          <textarea name="details" id="details" cols="30" rows="4" placeholder="Any special requests?"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Submit Booking</button>
+        <div id="form-message" class="form-message" style="display:none;"></div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 SafarFix Travel. All Rights Reserved.</p>
+  </footer>
+  <script src="https://kit.fontawesome.com/6558443b63.js" crossorigin="anonymous"></script>
+  <script>
+    // Responsive nav toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+    // Booking form feedback
+    const bookingForm = document.getElementById('bookingForm');
+    const formMessage = document.getElementById('form-message');
+    if (bookingForm) {
+      bookingForm.addEventListener('submit', function(e) {
+        formMessage.style.display = 'block';
+        formMessage.textContent = 'Submitting your booking...';
+        formMessage.style.color = '#ff7f50';
+        setTimeout(() => {
+          formMessage.textContent = 'Thank you! Your booking has been received. Our team will contact you soon.';
+          formMessage.style.color = 'green';
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

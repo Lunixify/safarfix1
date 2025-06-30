@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafarFix Travel | Professional Travel Agency</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#"><img src="images/logo.jpg" alt="SafarFix Travel Logo" /></a>
+      </div>
+      <nav class="nav-menu" id="nav-menu">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#hotels">Hotels</a></li>
+          <li><a href="#activites">Activities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-image">
+        <img src="images/hero.jpg" alt="Travel the world with SafarFix" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <h1><span class="highlight">Book Your Next Adventure</span></h1>
+        <p class="hero-sub">Apka Plan, Humari Setting!</p>
+        <div class="booking-tabs">
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="holidays"><i class="fas fa-umbrella-beach"></i> Holidays</button>
+          </div>
+          <div class="tab-content active" id="holidays">
+            <form class="booking-form">
+              <div class="custom-select-wrapper">
+                <div class="custom-select" id="customSelect">
+                  <input type="text" id="customSelectInput" placeholder="Select or search destination..." readonly required />
+                  <div class="custom-select-dropdown" id="customSelectDropdown" style="display:none;">
+                    <input type="text" id="customSelectSearch" placeholder="Type to search..." autocomplete="off" />
+                    <ul id="customSelectOptions">
+                      <li data-value="Delhi">Delhi</li>
+                      <li data-value="Mumbai">Mumbai</li>
+                      <li data-value="Kolkata">Kolkata</li>
+                      <li data-value="Chennai">Chennai</li>
+                      <li data-value="Bengaluru">Bengaluru</li>
+                      <li data-value="Hyderabad">Hyderabad</li>
+                      <li data-value="Ahmedabad">Ahmedabad</li>
+                      <li data-value="Pune">Pune</li>
+                      <li data-value="Jaipur">Jaipur</li>
+                      <li data-value="Lucknow">Lucknow</li>
+                      <li data-value="Kanpur">Kanpur</li>
+                      <li data-value="Nagpur">Nagpur</li>
+                      <li data-value="Indore">Indore</li>
+                      <li data-value="Bhopal">Bhopal</li>
+                      <li data-value="Patna">Patna</li>
+                      <li data-value="Vadodara">Vadodara</li>
+                      <li data-value="Ludhiana">Ludhiana</li>
+                      <li data-value="Agra">Agra</li>
+                      <li data-value="Nashik">Nashik</li>
+                      <li data-value="Faridabad">Faridabad</li>
+                      <li data-value="Meerut">Meerut</li>
+                      <li data-value="Rajkot">Rajkot</li>
+                      <li data-value="Varanasi">Varanasi</li>
+                      <li data-value="Srinagar">Srinagar</li>
+                      <li data-value="Amritsar">Amritsar</li>
+                      <li data-value="Ranchi">Ranchi</li>
+                      <li data-value="Guwahati">Guwahati</li>
+                      <li data-value="Chandigarh">Chandigarh</li>
+                      <li data-value="Dehradun">Dehradun</li>
+                      <li data-value="Shimla">Shimla</li>
+                      <li data-value="Goa">Goa</li>
+                      <li data-value="Kerala">Kerala</li>
+                      <li data-value="Tamil Nadu">Tamil Nadu</li>
+                      <li data-value="Karnataka">Karnataka</li>
+                      <li data-value="Maharashtra">Maharashtra</li>
+                      <li data-value="Uttar Pradesh">Uttar Pradesh</li>
+                      <li data-value="Madhya Pradesh">Madhya Pradesh</li>
+                      <li data-value="Rajasthan">Rajasthan</li>
+                      <li data-value="Punjab">Punjab</li>
+                      <li data-value="Haryana">Haryana</li>
+                      <li data-value="Gujarat">Gujarat</li>
+                      <li data-value="West Bengal">West Bengal</li>
+                      <li data-value="Odisha">Odisha</li>
+                      <li data-value="Bihar">Bihar</li>
+                      <li data-value="Jharkhand">Jharkhand</li>
+                      <li data-value="Assam">Assam</li>
+                      <li data-value="Chhattisgarh">Chhattisgarh</li>
+                      <li data-value="Uttarakhand">Uttarakhand</li>
+                      <li data-value="Himachal Pradesh">Himachal Pradesh</li>
+                      <li data-value="Jammu & Kashmir">Jammu & Kashmir</li>
+                      <li data-value="Telangana">Telangana</li>
+                      <li data-value="Andhra Pradesh">Andhra Pradesh</li>
+                      <li data-value="Tripura">Tripura</li>
+                      <li data-value="Manipur">Manipur</li>
+                      <li data-value="Meghalaya">Meghalaya</li>
+                      <li data-value="Nagaland">Nagaland</li>
+                      <li data-value="Mizoram">Mizoram</li>
+                      <li data-value="Sikkim">Sikkim</li>
+                      <li data-value="Puducherry">Puducherry</li>
+                      <li data-value="Daman & Diu">Daman & Diu</li>
+                      <li data-value="Lakshadweep">Lakshadweep</li>
+                      <li data-value="Andaman & Nicobar">Andaman & Nicobar</li>
+                    </ul>
+                  </div>
+                  <input type="hidden" name="destination" id="destinationHidden" required />
+                </div>
+              </div>
+              <input type="date" required />
+              <input type="number" min="1" max="10" placeholder="Travellers" required />
+              <button type="submit" class="btn-primary">Search Holidays</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why-choose-us">
+      <h2>Why Choose SafarFix?</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <i class="fas fa-user-tie"></i>
+          <h4>Expert Guidance</h4>
+          <p>Our travel experts help you plan the perfect trip, every time.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-globe"></i>
+          <h4>Global Destinations</h4>
+          <p>We offer curated experiences in the world’s most exciting places.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-shield-alt"></i>
+          <h4>Trusted & Secure</h4>
+          <p>Book with confidence—your data and payments are always safe.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-headset"></i>
+          <h4>24/7 Support</h4>
+          <p>Our team is available around the clock for your peace of mind.</p>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-item">
+          <p>“SafarFix made our honeymoon unforgettable! The service was top-notch.”</p>
+          <span>- Priya & Raj</span>
+        </div>
+        <div class="testimonial-item">
+          <p>“I always book with SafarFix for business trips. Reliable and easy.”</p>
+          <span>- Ankit S.</span>
+        </div>
+        <div class="testimonial-item">
+          <p>“Great deals and amazing support. Highly recommended!”</p>
+          <span>- Meena T.</span>
+        </div>
+      </div>
+    </section>
+    <main>
+      <!-- Destinations -->
+      <section id="destinations" class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-grid">
+          <div class="destination-item">
+            <img src="images/destination-1.jpg" alt="" />
+            <h3>New York City</h3>
+            <p>
+              Visit the city that never sleeps and discover its iconic
+              landmarks, world-class museums, and diverse neighborhoods.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/destination-2.jpg" alt="" />
+            <h3>Paris</h3>
+            <p>
+              Experience the romance and culture of the City of Lights, from the
+              Eiffel Tower to the Louvre Museum.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/destination-3.jpg" alt="" />
+            <h3>Tokyo</h3>
+            <p>
+              Explore the vibrant city of Tokyo and immerse yourself in its
+              unique blend of ancient traditions and modern technology.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="hotels" class="destinations">
+        <h2>Featured Hotels</h2>
+        <div class="destination-grid">
+          <div class="destination-item">
+            <img src="images/hotel-1.jpg" alt="" />
+            <h3>The Ritz Carlton</h3>
+            <p>
+              Experience luxury accommodations and impeccable service at The
+              Ritz Carlton, located in the heart of the city.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/hotel-2.jpg" alt="" />
+            <h3>The Four Seasons</h3>
+            <p>
+              Relax in style at The Four Seasons, featuring breathtaking views,
+              an award-winning spa, and gourmet dining options.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/hotel-3.jpg" alt="" />
+            <h3>The Waldorf Astoria</h3>
+            <p>
+              Indulge in luxury at The Waldorf Astoria, a historic landmark
+              hotel renowned for its elegance and sophistication.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="activites" class="destinations">
+        <h2>Featured Activities</h2>
+        <div class="destination-grid">
+          <div class="destination-item">
+            <img src="images/activity-1.jpg" alt="" />
+            <h3>The Ritz Carlton</h3>
+            <p>
+              Experience luxury accommodations and impeccable service at The
+              Ritz Carlton, located in the heart of the city.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/activity-2.jpg" alt="" />
+            <h3>The Four Seasons</h3>
+            <p>
+              Relax in style at The Four Seasons, featuring breathtaking views,
+              an award-winning spa, and gourmet dining options.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/activity-3.jpg" alt="" />
+            <h3>The Waldorf Astoria</h3>
+            <p>
+              Indulge in luxury at The Waldorf Astoria, a historic landmark
+              hotel renowned for its elegance and sophistication.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <h3>About Us</h3>
+        <p>
+          SafarFix Travel is dedicated to providing the best travel experiences to our customers. We specialize in creating custom itineraries that cater to each individual's interests and preferences. Our team of travel experts ensures a seamless and memorable journey for every client.
+        </p>
+      </section>
+      <section id="contact" class="contact">
+        <h3>Contact Us</h3>
+        <div class="contact-info">
+          <p>
+            If you have any questions or would like to book a trip, please fill out the form below or contact us using the information provided.
+          </p>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Abhishek Tours n Travels, Railway Road, Opp. Railway Station, Shikhu Pur, Devpura, Haridwar, Uttarakhand 249401
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:safarfixtravel@gmail.com">safarfixtravel@gmail.com</a>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+918979422404">+91 8979422404</a>
+            </li>
+          </ul>
+        </div>
+        <form action="https://formspree.io/f/xwkrqjzv" method="POST" class="form" autocomplete="on">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="textarea">Message</label>
+            <textarea
+              name="message"
+              id="textarea"
+              cols="30"
+              rows="6"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </section>
+      <footer>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <p>&copy; 2025 SafarFix Travel. All Rights Reserved.</p>
+      </footer>
+    </main>
+    <script src="https://kit.fontawesome.com/6558443b63.js" crossorigin="anonymous"></script>
+    <script>
+      // Responsive nav toggle
+      const navToggle = document.getElementById('nav-toggle');
+      const navMenu = document.getElementById('nav-menu');
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+      });
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+      // Booking Tabs Functionality
+      const tabBtns = document.querySelectorAll('.tab-btn');
+      const tabContents = document.querySelectorAll('.tab-content');
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          tabBtns.forEach(b => b.classList.remove('active'));
+          tabContents.forEach(tc => tc.classList.remove('active'));
+          this.classList.add('active');
+          document.getElementById(this.dataset.tab).classList.add('active');
+        });
+      });
+      // Custom searchable dropdown for destination
+      const customSelect = document.getElementById('customSelect');
+      const customSelectInput = document.getElementById('customSelectInput');
+      const customSelectDropdown = document.getElementById('customSelectDropdown');
+      const customSelectSearch = document.getElementById('customSelectSearch');
+      const customSelectOptions = document.getElementById('customSelectOptions');
+      const destinationHidden = document.getElementById('destinationHidden');
+      if (customSelect) {
+        customSelectInput.addEventListener('click', function(e) {
+          customSelectDropdown.style.display = 'block';
+          customSelectSearch.value = '';
+          customSelectSearch.focus();
+          Array.from(customSelectOptions.children).forEach(li => li.style.display = 'block');
+        });
+        customSelectSearch.addEventListener('input', function() {
+          const val = this.value.toLowerCase();
+          Array.from(customSelectOptions.children).forEach(li => {
+            li.style.display = li.textContent.toLowerCase().includes(val) ? 'block' : 'none';
+          });
+        });
+        customSelectOptions.addEventListener('click', function(e) {
+          if (e.target.tagName === 'LI') {
+            customSelectInput.value = e.target.textContent;
+            destinationHidden.value = e.target.getAttribute('data-value');
+            customSelectDropdown.style.display = 'none';
+          }
+        });
+        document.addEventListener('click', function(e) {
+          if (!customSelect.contains(e.target)) {
+            customSelectDropdown.style.display = 'none';
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
